@@ -29,7 +29,6 @@ SessionID = None
 
 @app.route('/')
 def home():
-    print(app.template_folder)
     return render_template('home.html')
 
 @app.route('/initiate', methods=['GET'])
