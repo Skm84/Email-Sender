@@ -3,7 +3,7 @@ import requests
 import os
 from dotenv import load_dotenv , find_dotenv
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 #Pulling the API key from .env file
 env_path = find_dotenv()
